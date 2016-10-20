@@ -1,5 +1,5 @@
 
-AWS provides a rich set of CLI commands to interface with support via APIs and CLI. Sometimes you just want to quickly retrive the list of all past and current cases (included resolved) with minimal information (less clutter) - Here is the one line command to do that
+### AWS provides a rich set of CLI commands to interface with support via APIs and CLI. Sometimes you just want to quickly retrive the list of all past and current cases (included resolved) with minimal information (less clutter) - Here is the one line command to do that
 
 ```
 aws support describe-cases --include-resolved-cases --output table --query 'cases[*].{"Case #":displayId, Title:subject}' --no-include-communications
