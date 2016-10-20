@@ -1,2 +1,3 @@
 # aws-support
-Handy scripts and CLIs to interface with AWS Support backend
+This reposistory is a collection of handy scripts (mostly Python) and CLI commands to interface with AWS Support backend
+
