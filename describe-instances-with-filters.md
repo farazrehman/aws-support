@@ -25,3 +25,8 @@ The above command will filter out all the EC2 instances that have a tag, "Name" 
 +-------------+--------------------------------+
 
 ```
+Also sometimes you want to display as sepcific tag in the output, this command below will accomplish that. I am looking for a way to make it a bit cleaner so there is one record per row, but for this works
+
+```
+aws ec2 describe-instances --query "Reservations[].Instances[].[InstanceId,Tags[?Key=='Name'].Value]" --output table
+```
