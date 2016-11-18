@@ -1,6 +1,6 @@
 The 'describe-instances' is a very power CLI/API call that returns a detailed dataset about every single EC2 instance in your account. However, chances are that you have more than just a handful of instances in your account so when you run this call in its default form like this
 
-```perl
+```python
 aws ec2 describe-instances --output table
 ```
 
