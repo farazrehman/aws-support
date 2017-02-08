@@ -25,8 +25,8 @@ for i in range(len(levels)):
     print ("  ["+str(i)+"] "+c['name'])
 # -------------
 
-print
-print
+print "Hello"
+print "Hello"
 
 # --- Get the list of services ---
 services = client.describe_services()
