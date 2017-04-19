@@ -25,8 +25,8 @@ for i in range(len(levels)):
     print ("  ["+str(i)+"] "+c['name'])
 # -------------
 
-print "Hello"
-print "Hello"
+print
+print
 
 # --- Get the list of services ---
 services = client.describe_services()
@@ -38,6 +38,8 @@ for i in range(len(mServices)):
 	q = mServices[i]
 	print ("  ("+str(i)+") "+q['code']+" ["+q['name']+"]")
 	
+
+# This has been on hold due to other projects
 #pp = pprint.PrettyPrinter()
 #pp.pprint(services)
 
