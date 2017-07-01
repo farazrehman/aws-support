@@ -2,7 +2,7 @@
 This reposistory is a collection of handy scripts (mostly Python) and CLI commands to interface with AWS Support backend. Here is what you need to get started
 
 - AWS CLI installed on local machine *EC2 instances running Amazon linux already have them pre-installed*
-- If running EC2, you can launch instance with the role that allowes access to EC2 support backend. For this you can createa  role with policy "SupportUser" - If that is not possible, you can also store your EC2 access keys on the local machine, but this ** a security risk and NOT recommended for production ** environments 
+- If running EC2, you can launch instance with the role that allowes access to EC2 support backend. For this you can create a  role with policy **SupportUser** - If that is not possible, you can also store your EC2 access keys on the local machine, but this **a security risk and NOT recommended for production environments**
 
 **Please make sure that you have the credentials (either stored locally) or via instance role to permit execution of CLI/scripts on your machine**
 
