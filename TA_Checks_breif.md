@@ -35,7 +35,7 @@ aws --region us-east-1 support describe-trusted-advisor-checks --language en --q
 ```
 
 Here is what the output looks like:
-----
+
 ```python
 security	Security Groups - Specific Ports Unrestricted
 security	Security Groups - Unrestricted Access
