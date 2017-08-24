@@ -28,3 +28,30 @@ fault_tolerance	S45wrEXrLz	VPN Tunnel Redundancy
 performance	ZRxQlPsb6c	High Utilization Amazon EC2 Instances
 ```
 
+Here is another one, this one actually narrows the output down to checks that belong to 'Security' category and prints only the check ID and Name
+
+```bash
+aws --region us-east-1 support describe-trusted-advisor-checks --language en --query "checks[?category=='security'].{CAT:category,NAME:name}" --output text
+```
+
+Here is what the output looks like:
+----
+```python
+security	Security Groups - Specific Ports Unrestricted
+security	Security Groups - Unrestricted Access
+security	IAM Use
+security	Amazon S3 Bucket Permissions
+security	MFA on Root Account
+security	IAM Password Policy
+security	Amazon RDS Security Group Access Risk
+security	Amazon Route 53 MX Resource Record Sets and Sender Policy Framework
+security	AWS CloudTrail Logging
+security	ELB Listener Security
+security	ELB Security Groups
+security	CloudFront Custom SSL Certificates in the IAM Certificate Store
+security	CloudFront SSL Certificate on the Origin Server
+security	IAM Access Key Rotation
+security	Exposed Access Keys
+security	Amazon EBS Public Snapshots
+security	Amazon RDS Public Snapshots
+```
