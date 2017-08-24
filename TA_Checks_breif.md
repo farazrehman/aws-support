@@ -27,8 +27,8 @@ fault_tolerance	iqdCTZKCUp	Load Balancer Optimization
 fault_tolerance	S45wrEXrLz	VPN Tunnel Redundancy
 performance	ZRxQlPsb6c	High Utilization Amazon EC2 Instances
 ```
+Here is another one. You can actually use syntax like "checks[?cateory=='security'] or anything else for that matter, narrow the scope of your query. This is really powerful when you are trying to automate different aspects of your TA checks
 
-Here is another one, this one actually narrows the output down to checks that belong to 'Security' category and prints only the check ID and Name
 
 ```bash
 aws --region us-east-1 support describe-trusted-advisor-checks --language en --query "checks[?category=='security'].{CAT:category,NAME:name}" --output text
